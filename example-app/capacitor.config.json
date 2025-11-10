@@ -1,0 +1,10 @@
+{
+  "appId": "app.capgo.webviewguardian.example",
+  "appName": "Webview Guardian Example",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
