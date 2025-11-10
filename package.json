@@ -1,7 +1,7 @@
 {
   "name": "@capgo/capacitor-webview-guardian",
   "version": "7.0.0",
-  "description": "Detect when the Capacitor WebView was killed in the background and relaunch it on foreground.",
+  "description": "Capacitor plugin to Detect when the WebView was killed in the background and relaunch it on foreground.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
