@@ -27,7 +27,7 @@ public class WebviewGuardianPlugin: CAPPlugin, CAPBridgedPlugin {
 
     // MARK: - Lifecycle
 
-    public override func load() {
+    override public func load() {
         super.load()
         NotificationCenter.default.addObserver(
             self,

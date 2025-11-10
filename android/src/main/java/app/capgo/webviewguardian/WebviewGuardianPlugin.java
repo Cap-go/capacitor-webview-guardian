@@ -3,16 +3,13 @@ package app.capgo.webviewguardian;
 import android.os.Handler;
 import android.os.Looper;
 import android.webkit.WebView;
-
 import androidx.annotation.Nullable;
-
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Logger;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -20,6 +17,7 @@ import java.util.TimeZone;
 
 @CapacitorPlugin(name = "WebviewGuardian")
 public class WebviewGuardianPlugin extends Plugin {
+
     private static final ThreadLocal<SimpleDateFormat> ISO_FORMAT = ThreadLocal.withInitial(() -> {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.US);
         sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
@@ -93,7 +91,7 @@ public class WebviewGuardianPlugin extends Plugin {
         logDebug("Running health check with reason=" + reason);
         mainHandler.post(() -> {
             try {
-                webView.evaluateJavascript(options.pingScript, value -> {
+                webView.evaluateJavascript(options.pingScript, (value) -> {
                     lastHealthyAt = System.currentTimeMillis();
                     notifyListeners("webviewHealthy", buildStatePayload(reason, null));
                     if (call != null) {
@@ -225,6 +223,7 @@ public class WebviewGuardianPlugin extends Plugin {
     }
 
     private static final class MonitoringOptions {
+
         private int foregroundDebounceMs = 600;
         private String pingScript = "(function(){return document.readyState;})();";
         private boolean autoRestart = true;
