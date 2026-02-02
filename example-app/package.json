@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@capacitor/core": "^7.4.4",
-    "@capacitor/camera": "^7.0.0",
+    "@capacitor/camera": "^8.0.0",
     "@capacitor/splash-screen": "^7.0.0",
     "@capgo/capacitor-webview-guardian": "file:..",
     "@capacitor/ios": "^7.4.4",
