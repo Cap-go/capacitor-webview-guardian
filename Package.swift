@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "WebviewGuardian",
+    name: "CapgoCapacitorWebviewGuardian",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "WebviewGuardian",
+            name: "CapgoCapacitorWebviewGuardian",
             targets: ["WebviewGuardianPlugin"])
     ],
     dependencies: [
