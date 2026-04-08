@@ -13,7 +13,7 @@ Keep your Capacitor app alive after the OS kills its WebView while the app is in
 | Plugin version | Capacitor compatibility | Maintained |
 | -------------- | ----------------------- | ---------- |
 | v8.\*.\*       | v8.\*.\*                | ✅          |
-| v7.\*.\*       | v7.\*.\*                | On demand   |
+| v7.\*.\*       | v7.\*.\*                | On demand  |
 | v6.\*.\*       | v6.\*.\*                | ❌          |
 | v5.\*.\*       | v5.\*.\*                | ❌          |
 
