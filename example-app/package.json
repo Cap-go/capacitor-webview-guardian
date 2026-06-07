@@ -10,7 +10,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "capgo:deploy": "cd .. && bun run example:capgo:deploy"
   },
   "dependencies": {
     "@capacitor/core": "^7.4.4",
@@ -18,11 +19,13 @@
     "@capacitor/splash-screen": "^7.0.0",
     "@capgo/capacitor-webview-guardian": "file:..",
     "@capacitor/ios": "^7.4.4",
-    "@capacitor/android": "^7.4.4"
+    "@capacitor/android": "^7.4.4",
+    "@capgo/capacitor-updater": "^8.45.11"
   },
   "devDependencies": {
     "@capacitor/cli": "^7.4.4",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "typescript": "^5.9.3"
   },
   "author": "",
   "license": "ISC"
