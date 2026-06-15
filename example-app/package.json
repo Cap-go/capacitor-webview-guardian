@@ -10,19 +10,22 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "capgo:deploy": "cd .. && bun run example:capgo:deploy"
   },
   "dependencies": {
-    "@capacitor/core": "^7.4.4",
-    "@capacitor/camera": "^7.0.0",
-    "@capacitor/splash-screen": "^7.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/camera": "^8.2.0",
+    "@capacitor/splash-screen": "^8.0.1",
     "@capgo/capacitor-webview-guardian": "file:..",
-    "@capacitor/ios": "^7.4.4",
-    "@capacitor/android": "^7.4.4"
+    "@capacitor/ios": "^8.0.0",
+    "@capacitor/android": "^8.0.0",
+    "@capgo/capacitor-updater": "^8.45.11"
   },
   "devDependencies": {
-    "@capacitor/cli": "^7.4.4",
-    "vite": "^7.3.1"
+    "@capacitor/cli": "^8.0.0",
+    "vite": "^7.3.1",
+    "typescript": "^5.9.3"
   },
   "author": "",
   "license": "ISC"

@@ -11,10 +11,11 @@ let package = Package(
             targets: ["CapApp-SPM"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "8.0.0"),
-        .package(name: "CapacitorCamera", path: "../../../node_modules/.bun/@capacitor+camera@7.0.3+15e98482558ccfe6/node_modules/@capacitor/camera"),
-        .package(name: "CapacitorSplashScreen", path: "../../../node_modules/.bun/@capacitor+splash-screen@7.0.4+15e98482558ccfe6/node_modules/@capacitor/splash-screen"),
-        .package(name: "CapgoCapacitorWebviewGuardian", path: "../../../node_modules/.bun/@capgo+capacitor-webview-guardian@file+../node_modules/@capgo/capacitor-webview-guardian")
+        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", exact: "8.4.0"),
+        .package(name: "CapacitorCamera", path: "../../../node_modules/.bun/@capacitor+camera@8.2.0+1b808583819c2ac6/node_modules/@capacitor/camera"),
+        .package(name: "CapacitorSplashScreen", path: "../../../node_modules/.bun/@capacitor+splash-screen@8.0.1+1b808583819c2ac6/node_modules/@capacitor/splash-screen"),
+        .package(name: "CapgoCapacitorWebviewGuardian", path: "../../../node_modules/.bun/@capgo+capacitor-webview-guardian@file+../node_modules/@capgo/capacitor-webview-guardian"),
+        .package(name: "CapgoCapacitorUpdater", path: "../../../node_modules/.bun/@capgo+capacitor-updater@8.47.10+1b808583819c2ac6/node_modules/@capgo/capacitor-updater")
     ],
     targets: [
         .target(
@@ -24,7 +25,8 @@ let package = Package(
                 .product(name: "Cordova", package: "capacitor-swift-pm"),
                 .product(name: "CapacitorCamera", package: "CapacitorCamera"),
                 .product(name: "CapacitorSplashScreen", package: "CapacitorSplashScreen"),
-                .product(name: "CapgoCapacitorWebviewGuardian", package: "CapgoCapacitorWebviewGuardian")
+                .product(name: "CapgoCapacitorWebviewGuardian", package: "CapgoCapacitorWebviewGuardian"),
+                .product(name: "CapgoCapacitorUpdater", package: "CapgoCapacitorUpdater")
             ]
         )
     ]
