@@ -4,7 +4,7 @@ import pkg from './package.json';
 
 const config: CapacitorConfig = {
   appId: 'app.capgo.webviewguardian.example',
-  appName: 'Webview Guardian Example',
+  appName: '@capgo/capacitor-webview-guardian',
   webDir: 'dist',
   plugins: {
     SplashScreen: {
