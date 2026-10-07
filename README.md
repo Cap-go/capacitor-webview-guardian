@@ -1,10 +1,27 @@
 # @capgo/capacitor-webview-guardian
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-webview-guardian" alt="Capgo - Instant updates for Capacitor" /></a>
+
+Bring your Capacitor app back to life when the OS kills its WebView in the background: Webview Guardian checks the renderer on foreground and reloads it automatically.
+
+<a href="https://capgo.app/?ref=plugin_webview_guardian"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-webview-guardian" alt="Capgo - Instant updates for Capacitor" /></a>
 
 <div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_webview_guardian"> ➡️ Get Instant updates for your App with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_webview_guardian"> Missing a feature? We’ll build the plugin for you 💪</a></h2>
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_webview_guardian">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_webview_guardian">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-webview-guardian/main/assets/github-social-preview.png" alt="@capgo/capacitor-webview-guardian for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **Monitoring**: `startMonitoring()` and `stopMonitoring()` watch foreground events.
+- **Auto restart**: reloads a terminated WebView with a `reload`, `reloadFromOrigin` or `customUrl` strategy.
+- **Health probe**: `checkNow()` tests the WebView right away.
+- **State and events**: `getState()` and the `foreground` event.
+- **Platforms**: iOS and Android. Not available on web.
 
 Keep your Capacitor app alive after the OS kills its WebView while the app is in the background. Webview Guardian listens for foreground events, probes the renderer, and reloads it automatically (or notifies you so you can recover your own state) when the render process was terminated.
 
