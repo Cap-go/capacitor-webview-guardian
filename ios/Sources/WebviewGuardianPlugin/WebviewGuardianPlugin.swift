@@ -143,11 +143,7 @@ public class WebviewGuardianPlugin: CAPPlugin, CAPBridgedPlugin {
 
             switch self.monitoringOptions.restartStrategy {
             case .reloadFromOrigin:
-                if webView.responds(to: #selector(WKWebView.reloadFromOrigin)) {
-                    webView.reloadFromOrigin()
-                } else {
-                    webView.reload()
-                }
+                webView.reloadFromOrigin()
             case .customUrl:
                 if let url = self.monitoringOptions.customRestartURL {
                     webView.load(URLRequest(url: url))
