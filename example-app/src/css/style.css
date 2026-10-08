@@ -1,18 +1,25 @@
-/* Capacitor example app defaults */
+/* Capacitor example app shell */
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   touch-action: manipulation;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  color-scheme: light dark;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
 }
 
 body {
   overscroll-behavior: none;
   -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--page-bg, #f4f6f8);
+  color: var(--page-fg, #1a1d21);
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
+@media (prefers-color-scheme: dark) {
+  body {
+    --page-bg: #0f1114;
+    --page-fg: #e8eaed;
+  }
 }
