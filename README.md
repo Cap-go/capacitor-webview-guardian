@@ -2,7 +2,7 @@
 
 Bring your Capacitor app back to life when the OS kills its WebView in the background: Webview Guardian checks the renderer on foreground and reloads it automatically.
 
-<a href="https://capgo.app/?ref=plugin_webview_guardian"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-webview-guardian" alt="Capgo - Instant updates for Capacitor" /></a>
+<a href="https://capgo.app/?ref=plugin_webview_guardian"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-webview-guardian" alt="Capgo - Build Capacitor apps with AI, ship updates instantly" /></a>
 
 <div align="center">
   <p><b>Capgo</b>: push fixes to your Capacitor users in minutes, build signed iOS and Android apps without a Mac, and roll back in one click.</p>
@@ -10,6 +10,8 @@ Bring your Capacitor app back to life when the OS kills its WebView in the backg
   <p>14-day unlimited free trial. No credit card required</p>
   <p><a href="https://capgo.app/consulting/?ref=plugin_webview_guardian">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
+
+> 🤖 **Building with an AI coding agent?** Install [Capgo skills](https://capgo.app/skills/?ref=plugin_webview_guardian) so Claude Code, Codex, Cursor, Copilot, or Gemini CLI know how to install and use `@capgo/capacitor-webview-guardian` in your Capacitor app: `npx skills add Cap-go/capgo-skills`. Then ask your agent: *"Add @capgo/capacitor-webview-guardian to my Capacitor app and wire it up."* [Agent setup guides](https://capgo.app/agents/?ref=plugin_webview_guardian) · [Hosted MCP](https://capgo.app/docs/ai/mcp/?ref=plugin_webview_guardian)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Cap-go/capacitor-webview-guardian/main/assets/github-social-preview.png" alt="@capgo/capacitor-webview-guardian for Capacitor apps" width="300" />
